@@ -1,0 +1,17 @@
+let adjective, noun, verb, place, adjective2, noun2;
+adjective="a";
+noun="n";
+verb="v";
+place="p";
+adjective2="a2";
+noun2="n2";
+let firstStory="Once upon a time, there was a(n) "+adjective+" "+noun+" who loved to eat "+noun2+". The "+noun+" lived in a "+place+" and had "+adjective2+" nostrils that blew fire when it was "+verb+".";
+console.log("First story: "+firstStory);
+adjective="b";
+noun="o";
+verb="w";
+place="q";
+adjective2="b2";
+noun2="o2";
+let secondStory="Once upon a time, there was a(n) "+adjective+" "+noun+" who loved to eat "+noun2+". The "+noun+" lived in a "+place+" and had "+adjective2+" nostrils that blew fire when it was "+verb+".";
+console.log("Second story: "+secondStory);
