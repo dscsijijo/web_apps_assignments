@@ -27,3 +27,19 @@ function addNumbers(){
     const result=num1+num2;
     document.getElementById("result").textContent=result;
 }
+function textLength(){
+    const text=document.getElementById("textInput").value;
+    const length=text.length;
+    document.getElementById("lengthResult").textContent=`\"${text}\" has ${length} characters.`;
+}
+function togglePassword(){
+    document.getElementById("password").type=document.getElementById("showPassword").checked ? "text" : "password";
+}
+function changeFont(){
+    document.getElementById("fontResult").style.fontFamily="cursive";
+    document.getElementById("fontResult").style.color="blue";
+    document.getElementById("fontResult").style.fontSize="24px";
+}
+function toggleVisibility(){
+    document.getElementById("toggleText").style.display=document.getElementById("toggleText").style.display==="none" ? "block" : "none";
+}
