@@ -43,3 +43,6 @@ function changeFont(){
 function toggleVisibility(){
     document.getElementById("toggleText").style.display=document.getElementById("toggleText").style.display==="none" ? "block" : "none";
 }
+function changeText(){
+    document.getElementById("demo").textContent="Hello World!";
+}
