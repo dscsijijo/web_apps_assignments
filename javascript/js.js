@@ -36,9 +36,9 @@ function togglePassword(){
     document.getElementById("password").type=document.getElementById("showPassword").checked ? "text" : "password";
 }
 function changeFont(){
-    document.getElementById("fontResult").style.fontFamily="cursive";
-    document.getElementById("fontResult").style.color="blue";
-    document.getElementById("fontResult").style.fontSize="24px";
+    document.getElementById("fontResult").style.fontFamily=document.getElementById("fontResult").style.fontFamily==="cursive" ? "initial" : "cursive";
+    document.getElementById("fontResult").style.color=document.getElementById("fontResult").style.color==="blue" ? "initial" : "blue";
+    document.getElementById("fontResult").style.fontSize=document.getElementById("fontResult").style.fontSize==="24px" ? "initial" : "24px";
 }
 function toggleVisibility(){
     document.getElementById("toggleText").style.display=document.getElementById("toggleText").style.display==="none" ? "block" : "none";
