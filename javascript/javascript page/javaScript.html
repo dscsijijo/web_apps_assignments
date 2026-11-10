@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
+
 
 <head>
+    <!-- Link the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <!--method to specify the character encoding-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,35 +17,57 @@
     <div class="page">
         <!-- Main content area -->
         <main>
+            <!-- Main heading of the webpage -->
             <h1>JavaScript</h1>
+            <!-- Example 1: Display a greeting using JavaScript -->
             <p>example 1</p>
             <div id="greet"></div>
+            <!-- Example 2: Change the text displayed in a paragraph when the button is clicked -->
             <p>example 2</p>
             <button onclick="changeText()">Click me</button>
             <p id="demo">aaa</p>
+            <!-- Example 3: Display the current date when the button is clicked -->
             <p>example 3</p>
             <button onclick="showDate()">Show date</button>
             <p id="date"></p>
+            <!-- Example 4: Accept two numbers from the user and display their sum -->
             <p>example 4</p>
+            <!-- Label and input field for the first number -->
             <label for="num1">Number 1:</label>
             <input type="text" id="num1" placeholder="Enter number 1">
+            <!-- Display the addition operator between the two input fields -->
             <label for="num1">+</label>
+            <!-- Label and input field for the second number -->
             <label for="num2">Number 2:</label>
             <input type="text" id="num2" placeholder="Enter number 2">
+            <!-- Call addNumbers() when the user clicks the button -->
             <button onclick="addNumbers()">Add</button>
+            <!-- Display the calculated sum -->
             <p id="result"></p>
+            <!-- Example 5: Calculate and display the number of characters in user-inputted text -->
             <p>example 5</p>
             <input type="text" id="textInput" placeholder="Enter text">
+            <!-- Call textLength() to calculate the length of the entered text -->
             <button onclick="textLength()">Text Length</button>
+            <!-- Display the calculated text length -->
             <p id="lengthResult"></p>
+            <!-- Example 6: Allow the user to show or hide their password -->
             <p>example 6</p>
+            <!-- Password input field; characters are hidden by default -->
             <input type="password" id="password" placeholder="Enter password">
+             <!-- Checkbox that calls togglePassword() when its state changes -->
             <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
+            <!-- Example 7: Change the font of a paragraph using JavaScript -->
             <p>example 7</p>
+            <!-- Paragraph whose font will be changed -->
             <p id="fontResult">text text text</p>
+              <!-- Call changeFont() when the user clicks the button -->
             <button onclick="changeFont()">Change Font</button>
+              <!-- Example 8: Hide or display an element using JavaScript -->
             <p>example 8</p>
+             <!-- Call toggleVisibility() to switch the visibility of the paragraph -->
             <button onclick="toggleVisibility()">Toggle Visibility</button>
+             <!-- Paragraph that can be hidden or shown -->
             <p id="toggleText">This text can be hidden or shown.</p>
         </main>
     </div>
