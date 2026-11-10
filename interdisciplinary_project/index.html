@@ -8,36 +8,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="mathquill-0.10.1/mathquill.css">
     <script src="mathquill-0.10.1/mathquill.js"></script>
+    <script src="javaScript.js"></script>
 </head>
 
 <body>
     <p>
-        Type math here: <span id="math-field">1 + \frac{1}{2}</span>
+        Type math here: <span id="math-field"></span>
     </p>
     <p>
         LaTeX output: <span id="latex-output"></span>
     </p>
-    <script>
-        // 4. Initialize MathQuill interface
-        var MQ = MathQuill.getInterface(2);
-
-        // Turn the span into an editable math field
-        var mathFieldSpan = document.getElementById('math-field');
-        var latexSpan = document.getElementById('latex-output');
-
-        var mathField = MQ.MathField(mathFieldSpan, {
-            handlers: {
-                edit: function () {
-                    // Get LaTeX from the math field and display it
-                    var enteredMath = mathField.latex();
-                    latexSpan.textContent = enteredMath;
-                }
-            }
-        });
-
-        // Set initial LaTeX value if needed
-        mathField.latex('x^2 + y^2 = z^2');
-    </script>
+    <button onclick="enter()">calculate</button>
+    <p id="result"></p>
 </body>
 
 </html>
