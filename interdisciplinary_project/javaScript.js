@@ -1,20 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 4. Initialize MathQuill interface
     let MQ = MathQuill.getInterface(2);
 
-    // Turn the span into an editable math field
     let mathFieldSpan = document.getElementById('math-field');
     let latexSpan = document.getElementById('latex-output');
-
     let mathField = MQ.MathField(mathFieldSpan, {
         handlers: {
             edit: function () {
-                // Get LaTeX from the math field and display it
                 let enteredMath = mathField.latex();
                 latexSpan.textContent = enteredMath;
             }
         }
     });
+    MQ.MathField(document.getElementById('math-field'), {autoCommands: 'sin'});
 });
 function enter() {
     let mathFieldSpan = document.getElementById('math-field');
@@ -93,9 +90,9 @@ function parse(input) {
                 throw new Error("Missing closing parenthesis");
             }
         }
-        else if (current === "{") {
+        else if (current === "\\left{") {
             left = expression();
-            if (consume() !== "}") {
+            if (consume() !== "\\right}") {
                 throw new Error("Missing closing parenthesis");
             }
         }
